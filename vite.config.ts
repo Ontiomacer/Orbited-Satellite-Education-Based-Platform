@@ -41,16 +41,29 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  // Build security optimizations
+  // Build optimizations
   build: {
     sourcemap: mode === 'development', // Only in dev
-    minify: 'terser',
-    terserOptions: {
+    minify: mode === 'production' ? 'terser' : 'esbuild',
+    terserOptions: mode === 'production' ? {
       compress: {
-        drop_console: mode === 'production', // Remove console.log in production
+        drop_console: true, // Remove console.log in production
         drop_debugger: true,
       },
+      mangle: {
+        safari10: true,
+      },
+    } : undefined,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+          ui: ['@radix-ui/react-dialog', '@radix-ui/react-dropdown-menu'],
+        },
+      },
     },
+    target: 'esnext',
+    chunkSizeWarningLimit: 1000,
   },
   // Environment variable validation
   define: {
