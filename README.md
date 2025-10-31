@@ -54,6 +54,23 @@
 
 *The Worqhat workflow builder showing the complete automation pipeline with REST API Trigger, HTTP Request, Send Mail, and Return Data nodes. This visual interface allows you to create and manage complex workflows for satellite data processing and notifications.*
 
+<details>
+<summary>🖼️ More Screenshots (Click to expand)</summary>
+
+### 🛰️ Satellite Tracking Interface
+*Coming soon - Real-time satellite tracking with 3D visualization*
+
+### 🤖 AI-Powered Assistant  
+*Coming soon - Smart Satellite Assistant providing space-related insights*
+
+### 📊 Analytics Dashboard
+*Coming soon - Comprehensive workflow metrics and performance analytics*
+
+### 🎓 Educational Features
+*Coming soon - Interactive learning tools and space facts generator*
+
+</details>
+
 ## 🚀 Quick Start
 
 ### Prerequisites
