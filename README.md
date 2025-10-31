@@ -484,6 +484,13 @@ We welcome contributions! Please follow these steps:
 2. Clear Vite cache: `rm -rf .vite`
 3. Check TypeScript errors: `npm run type-check`
 
+#### Browser Extension Warnings
+If you see "Unchecked runtime.lastError: The message port closed before a response was received":
+- This is a common browser extension issue, not an app error
+- It doesn't affect app functionality
+- The app includes automatic suppression of these warnings
+- You can safely ignore these messages
+
 ### Getting Help
 
 - **GitHub Issues** - Report bugs and request features
