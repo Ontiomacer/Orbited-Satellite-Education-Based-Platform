@@ -1,8 +1,6 @@
 const WORQHAT_API_KEY = import.meta.env.VITE_WORQHAT_API_KEY;
-// In development, we use the proxy to avoid CORS issues
-const WORQHAT_BASE_URL = import.meta.env.DEV 
-  ? '/api' 
-  : 'https://api.worqhat.com/api';
+// Always use the proxy to avoid CORS issues in both dev and production
+const WORQHAT_BASE_URL = '/api';
 
 // Workflow trigger interfaces matching OpenAPI specification
 export interface TriggerWorkflowRequest {
@@ -85,7 +83,7 @@ export const executeWorkflow = async (
     }
 
     // Build URL according to API specification: /flows/trigger/{flowId}
-    const baseUrl = options.baseUrl || (import.meta.env.DEV ? '/api' : 'https://api.worqhat.com');
+    const baseUrl = options.baseUrl || '/api';
     const apiPath = `${baseUrl}/flows/trigger/${flowId}`;
     
     console.log('Triggering workflow at:', apiPath);
@@ -367,10 +365,8 @@ export const getWorkflowMetrics = async (
     if (params?.status) queryParams.append('status', params.status);
     if (params?.user_id) queryParams.append('user_id', params.user_id);
 
-    // Use the proxy in development to avoid CORS issues
-    const baseUrl = import.meta.env.DEV 
-      ? '/api/flows/metrics' 
-      : 'https://api.worqhat.com/flows/metrics';
+    // Use the proxy to avoid CORS issues
+    const baseUrl = '/api/flows/metrics';
     
     const apiUrl = queryParams.toString() 
       ? `${baseUrl}?${queryParams.toString()}`
@@ -499,7 +495,7 @@ export const testWorkflowExecution = async (apiKey: string) => {
   try {
     const result = await executeWorkflow(workflowId, testData, {
       apiKey: apiKey,
-      baseUrl: 'https://api.worqhat.com' // Force production URL for testing
+      baseUrl: '/api' // Use proxy for testing
     });
     
     console.log('Workflow execution result:', result);
