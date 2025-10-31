@@ -50,7 +50,7 @@
 ## � Screenshots
 
 ### Worqhat Workflow Dashboard
-![Worqhat Workflow Dashboard](https://raw.githubusercontent.com/Ontiomacer/Orbited-Satellite-Education-Based-Platform/main/Screenshot%202025-10-31%20224135.png)
+![Worqhat Workflow Dashboard](https://github.com/Ontiomacer/Orbited-Satellite-Education-Based-Platform/blob/main/Screenshot%202025-10-31%20224135.png)
 
 *The Worqhat workflow builder showing the complete automation pipeline with REST API Trigger, HTTP Request, Send Mail, and Return Data nodes. This visual interface allows you to create and manage complex workflows for satellite data processing and notifications.*
 
