@@ -47,6 +47,13 @@
 - **Glass Morphism UI** - Modern, elegant interface design
 - **Enterprise Security** - Comprehensive security implementation
 
+## � Screenshots
+
+### Worqhat Workflow Dashboard
+![Worqhat Workflow Dashboard](./public/screenshots/worqhat-workflow-dashboard.png)
+
+*The Worqhat workflow builder showing the complete automation pipeline with REST API Trigger, HTTP Request, Send Mail, and Return Data nodes. This visual interface allows you to create and manage complex workflows for satellite data processing and notifications.*
+
 ## 🚀 Quick Start
 
 ### Prerequisites
