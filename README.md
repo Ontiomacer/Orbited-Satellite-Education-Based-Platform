@@ -2,10 +2,13 @@
 
 > Advanced satellite tracking platform with AI-powered insights, real-time workflow automation, and comprehensive space data analytics built with React, TypeScript, and Worqhat AI integration.
 
+**🚀 [Live Demo](https://orbited-satellite-education-based-p-one.vercel.app/) | 📖 [Documentation](#-quick-start) | 🤖 [AI Features](#-ai-integration)**
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![React](https://img.shields.io/badge/React-18.x-blue.svg)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue.svg)](https://www.typescriptlang.org/)
 [![Vite](https://img.shields.io/badge/Vite-5.x-purple.svg)](https://vitejs.dev/)
+[![Live Demo](https://img.shields.io/badge/Demo-Live-green.svg)](https://orbited-satellite-education-based-p-one.vercel.app/)
 
 ## 🌟 Features
 
@@ -84,6 +87,18 @@ npm run dev
 ```
 
 Open your browser to `http://localhost:5175`
+
+## 🌐 Live Demo
+
+**Try the live application:** https://orbited-satellite-education-based-p-one.vercel.app/
+
+### 🎯 **Key Features to Explore:**
+
+- **🛰️ Satellite Tracking** - Navigate to `/satellites` for real-time orbital visualization
+- **🤖 AI Showcase** - Visit `/worqhat-showcase` to try the Smart Satellite Assistant
+- **⚡ Workflow Executor** - Go to `/workflow-executor` to execute automated workflows
+- **📊 Analytics Dashboard** - Check `/workflow-metrics` for real-time performance data
+- **🎓 Educational Tools** - Explore interactive learning features throughout the app
 
 ## 🎯 Core Workflows
 
@@ -512,7 +527,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🔗 Links
 
-- **Live Demo** - [Coming Soon]
+- **Live Demo** - https://orbited-satellite-education-based-p-one.vercel.app/
 - **Worqhat Platform** - https://worqhat.com/
 - **Documentation** - Check the `/docs` folder
 - **API Reference** - https://docs.worqhat.com/api-reference
